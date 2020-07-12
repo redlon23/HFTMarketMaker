@@ -27,7 +27,7 @@ managePosition:
     # Enable or Disable buy protection, {true | false }
     useBuyProtection: true
     # Indicates the percentage to kick double buy protection in, { float }
-    buyProtectionPercentage: 0.02
+    buyProtectionPercentage: 2
 
     # Indicates the size when the bot will wait for the price to away from entry to continue trading
     noTradingZoneSize: 1
@@ -38,15 +38,15 @@ closePosition:
   # Choose a type of tp to use, { Limit | Trailing }
   typeOfTp: Trailing
 
-  limitTpPercentage: 0.001
+  limitTpPercentage: 0.1
 
   # If typeOfTp is trailing, these settings will be used, otherwise
   # they have no affect on limit tp process.
 
   # Indicates when the bot will start trailing, { float }
-  trailingStart: 0.0005
+  trailingStart: 0.05
   # Indicates how far behind it will trail tp order to be placed, { float }
-  trailingPercentage: 0.0005
+  trailingPercentage: 0.05
 
 
 
@@ -55,4 +55,4 @@ lossPosition:
   useStopLoss: true
 
   # Indicates...
-  stopLossPercentage: 0.01
+  stopLossPercentage: 1
