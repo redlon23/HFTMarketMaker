@@ -6,45 +6,45 @@ secretKey: <Secret Api Key>
 # Specify which symbol you want to trade
 symbol: BTCUSDT
 # Waiting time in seconds between each trading loop
-interval: 10
+interval: 60
 
 openPosition:
   # Choose a side to trade, { Buy | Sell }
-  tradingSide: Sell
+  tradingSide: Buy
   # Enable or Disable auto open position, { true | false }
   autoOpenPosition: true
   # How long the bot should wait between closing a position and opening a new one, { integer }
-  coolDownInSeconds: 10
+  coolDownInSeconds: 10000
 
 managePosition:
   # Indicates the size of each market maker order, { float }
-  scaleOrderSizeValue: 0.01
+  scaleOrderSizeValue: 0.001
   # Indicates the maximum size of a position can hold, { float }
-  maxContractSize: 1
+  maxContractSize: 0.5
 
   protection:
     # Buy Protection setting is used for both double buy and half buy protection
     # Enable or Disable buy protection, {true | false }
     useBuyProtection: true
     # Indicates the percentage to kick double buy protection in, { float }
-    buyProtectionPercentage: 2
+    buyProtectionPercentage: 3
 
     # Indicates the size when the bot will wait for the price to away from entry to continue trading
-    noTradingZoneSize: 1
+    noTradingZoneSize: 0.25
     # Indicates when the bot will start trading after price moving away from entry price by this much
-    noTradingZoneRange: 1
+    noTradingZoneRange: 350
 
 closePosition:
   # Choose a type of tp to use, { Limit | Trailing }
   typeOfTp: Trailing
 
-  limitTpPercentage: 0.1
+  limitTpPercentage: 0.25
 
   # If typeOfTp is trailing, these settings will be used, otherwise
   # they have no affect on limit tp process.
 
   # Indicates when the bot will start trailing, { float }
-  trailingStart: 0.05
+  trailingStart: 0.25
   # Indicates how far behind it will trail tp order to be placed, { float }
   trailingPercentage: 0.05
 
@@ -52,7 +52,7 @@ closePosition:
 
 lossPosition:
   # Enable or Disable stop loss functionality, { true | false }
-  useStopLoss: true
+  useStopLoss: false
 
   # Indicates...
   stopLossPercentage: 1
