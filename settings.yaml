@@ -1,5 +1,5 @@
 LicenceKey: <Your Licence Key>
-# Select desired exchange platform to trade, { BinancePerpetual | BybitUsdtPerpetual }
+# Select desired exchange platform to trade, { BinancePerpetual | BybitUsdtPerpetual | BybitInverse }
 platform: BinancePerpetual
 publicKey: <Public Api Key>
 secretKey: <Secret Api Key>
