@@ -14,7 +14,7 @@ openPosition:
   # Enable or Disable auto open position, { true | false }
   autoOpenPosition: true
   # How long the bot should wait between closing a position and opening a new one, { integer }
-  coolDownInSeconds: 10000
+  coolDownInSeconds: 900
 
 managePosition:
   # Indicates the size of each market maker order, { float }
