@@ -32,6 +32,7 @@ If the application shutdowns unexpectedly, check your PermissionError.txt file t
 ## what if application closes unexpectedly ?
  ##### **There are number of reasons why your application may close**
    1) If your application closes during start up then:
+       - The application will generate a SettingsError.txt file, which will explain the reason why the application is not working
        - The application will generate a PermissionError.txt file, which will explain the
        reason why the application is not working.
        - The reason might be: invalid licence key, expired licence key, HFT Servers are down, Cannot connect to HFT Servers,
